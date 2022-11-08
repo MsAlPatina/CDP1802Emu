@@ -31,7 +31,7 @@ const cdp = require("./cdp/cdp1802.js")
   export const checkedIN = checkedIN2;
   
   
-  var checkedIN2 = "disabled";
+  let checkedIN2 = "disabled";
   //const RAMSYSTEM = require("./RAMSYSTEM");
   let ErrorSeverity = "success";
   let ErrorInfo = "success";
@@ -161,8 +161,8 @@ export default function MemoryView(props) {
     }  
 	
 	 
-	 var popupseveraty = "success";
-	 var popupinfo = "all good";
+	 let popupseveraty = "success";
+	 let popupinfo = "all good";
 	 
 	 if(popupinfo = "all good"){
 		 
@@ -196,7 +196,7 @@ export default function MemoryView(props) {
 
 
 
-    console.log('value is:', event.target.value);
+
   };
   
    
@@ -207,7 +207,7 @@ export default function MemoryView(props) {
 
 
 
-    console.log('value is:', event.target.value);
+
   };
   
   
@@ -275,7 +275,7 @@ export default function MemoryView(props) {
   const switchHandler2 = (event) => {
     setChecked2(event.target.checked);
   };
-  var checkedIN2 = checked;
+
   
 
 
